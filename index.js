@@ -22,7 +22,7 @@ body.style.alignItems = "center";
 
 const startBtn = document.createElement("button");
 startBtn.textContent =
-  "если приложение есть- откроет, если нет- редирект на рустор!!!!!!!!!!!!!!!!!!!";
+  "deep link to History c условием (если приложение есть- откроет, если нет- редирект на рустор)!!!!!!!!!!!!!!!!!!!";
 startBtn.style.marginTop = "100px";
 startBtn.style.marginBottom = "30px";
 body.append(startBtn);
@@ -31,5 +31,5 @@ startBtn.addEventListener("click", () => {
   setTimeout(function () {
     window.location.replace("https://apps.rustore.ru/app/com.SmartApp");
   }, 25);
-  window.location.replace("smartapp://history");
+  window.location.replace("https://smartapp.ru/history");
 });
