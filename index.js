@@ -22,14 +22,28 @@ body.style.alignItems = "center";
 
 const startBtn = document.createElement("button");
 startBtn.textContent =
-  "deep link to History c условием (если приложение есть- откроет, если нет- редирект на рустор)!!!!!!!!!!!!!!!!!!!";
+  "deep link to History (https) c условием (если приложение есть- откроет, если нет- редирект на рустор)!!!!!!!!!!!!!!!!!!!";
 startBtn.style.marginTop = "100px";
 startBtn.style.marginBottom = "30px";
 body.append(startBtn);
+
+const firstBtn = document.createElement("button");
+firstBtn.textContent =
+  "deep link to History c условием (если приложение есть- откроет, если нет- редирект на рустор)!!!!!!!!!!!!!!!!!!!";
+firstBtn.style.marginTop = "100px";
+firstBtn.style.marginBottom = "30px";
+body.append(firstBtn);
 
 startBtn.addEventListener("click", () => {
   setTimeout(function () {
     window.location.replace("https://apps.rustore.ru/app/com.SmartApp");
   }, 25);
   window.location.replace("https://smartapp.ru/history");
+});
+
+firstBtn.addEventListener("click", () => {
+  setTimeout(function () {
+    window.location.replace("https://apps.rustore.ru/app/com.SmartApp");
+  }, 25);
+  window.location.replace("smartapp://history");
 });
